@@ -5,7 +5,7 @@ app = Flask(__name__)
 def homepage():
     return render_template("homepage.html")
 
-@app.route("/contatos")
+@app.route("/contatos", methods=["POST"])
 def contatos():
     return render_template("contatos.html")
 
